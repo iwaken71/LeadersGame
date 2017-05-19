@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 212290505746992668}
   - component: {fileID: 50948165218237094}
   - component: {fileID: 61587311165215534}
+  - component: {fileID: 114091835803860342}
   m_Layer: 0
   m_Name: BOSS_01
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,6 +77,18 @@ BoxCollider2D:
   m_Offset: {x: -0.0017108946, y: 0.07117421}
   serializedVersion: 2
   m_Size: {x: 3.0348766, y: 5.8576517}
+--- !u!114 &114091835803860342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1621158649324252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e98c017bff22418b9db9add32ae8683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: {fileID: 0}
 --- !u!212 &212290505746992668
 SpriteRenderer:
   m_ObjectHideFlags: 1

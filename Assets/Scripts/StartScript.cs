@@ -13,9 +13,12 @@ public class StartScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKey (KeyCode.Space)) {
+			GetStart ();
+		}
 	}
 
 	public void GetStart () {
-		SceneManager.LoadScene ("Start");
+		SceneManager.LoadScene ("Story01");
 	}
 }

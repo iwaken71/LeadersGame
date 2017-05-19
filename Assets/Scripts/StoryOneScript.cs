@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StoryOneScript : MonoBehaviour {
 	[SerializeField] string[] scenarios;
@@ -38,6 +39,9 @@ public class StoryOneScript : MonoBehaviour {
 		if( displayCharacterCount != lastUpdateCharacter ){
 			uiText.text = currentText.Substring(0, displayCharacterCount);
 			lastUpdateCharacter = displayCharacterCount;
+		}
+		if (currentLine == scenarios.Length) {
+			SceneManager.LoadScene ("Stage01");
 		}
 
 	}
